@@ -1,0 +1,66 @@
+/* Landing.css */
+.landing-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  
+  .blur-background {
+    background-image:url('../Assets/background3.jpg');
+    background-size: cover;
+    background-position: center;
+    /* filter: blur(10px);  */
+    /* padding: 20px;  */
+    color: #fff; /* Color del texto */
+    text-align: center;
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 120%;
+    height: 120%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+   
+/*   
+  @media (min-aspect-ratio: 16/9) {
+      .blur-background {
+          width: 100%;
+          height: auto;
+      }
+  }
+  @media (max-aspect-ratio: 16/9) {
+      .blur-background {
+          width: auto;
+          height: 100%;
+  
+      }
+  } */
+
+h1 {
+  font-size: 31px;
+  padding-top: 270px;
+  color: #010042;
+}
+  
+  .blur-background button {
+    /* Estilos del botón */
+    padding: 16px 20px;
+    font-size: 1.5em;
+    background-color: #00003b; /* Color del fondo del botón */
+    color: #dde4ec; /* Color del texto del botón */
+    text-decoration: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blur-background button:hover {
+    background-color: #2980b9; /* Cambia el color del fondo al pasar el ratón sobre el botón */
+  }
+  
+  
