@@ -1,15 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Landing from './components/Landing/landing';
-import './App.css';
 import Header from './components/Header/header';
-
+import Navbar from './components/Navbar/navbar';
+import './App.css';
 
 // Aca Renderizamos la Mainapp, a la que accedemos luego de Ingresar en la landing page.
 const MainApp = () => {
   return (
     <div className='Background'>
       <Header />
+      <Navbar />
     </div>
   );
 };

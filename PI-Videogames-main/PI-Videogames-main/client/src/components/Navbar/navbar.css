@@ -1,0 +1,36 @@
+/* En tu archivo Navbar.css */
+.navbar {
+    background-color: #333;
+    color: #fbf8ee;
+    text-align: justify;
+    font-size: 20px;
+    padding: 10px;
+    position: fixed;
+    width: 30%;
+    left: 35%;
+    z-index: 2;
+    border-radius: 40px;
+    background-color: #151e37e0;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'Press Start 2P', cursive;
+    display: flex; /* Añadido para alinear la imagen y los enlaces horizontalmente */
+    align-items: center; /* Añadido para centrar verticalmente la imagen y los enlaces */
+  }
+  
+  .logo-container img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px; /* Ajusta según sea necesario para separar el logo de otros elementos */
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .navbar.compact {
+    padding: 5px;
+  }
+  
