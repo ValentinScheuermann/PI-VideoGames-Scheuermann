@@ -5,7 +5,7 @@
     text-align: justify;
     font-size: 20px;
     padding: 10px;
-    position: fixed;
+    position: relative;
     width: 30%;
     left: 35%;
     z-index: 2;
@@ -21,7 +21,9 @@
   .logo-container img {
     width: 40px;
     height: auto;
-    margin-right: 10px; /* Ajusta según sea necesario para separar el logo de otros elementos */
+    margin-right: 10px; 
+    margin-left: 10px;
+    margin-top: 3px;
   }
   
   .nav-link {
@@ -33,4 +35,8 @@
   .navbar.compact {
     padding: 5px;
   }
-  
+.videogames {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}

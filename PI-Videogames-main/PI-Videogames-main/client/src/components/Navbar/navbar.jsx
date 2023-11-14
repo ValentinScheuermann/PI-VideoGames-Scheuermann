@@ -1,20 +1,48 @@
 // Navbar.jsx
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link, NavLink } from 'react-router-dom';
 import './navbar.css';
 
-const Navbar = () => {
+
+
+
+function Navbar() {
+
+  const [name, setName] = useState("");
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        setName("");
+    }
+
   return (
     <div className="navbar">
       <div className="logo-container">
-        <img src={require('../Assets/icocojoystick.jpg')} alt="Logo" />
+        <Link to="/">
+          <img src={require('../Assets/fotojoystick.png')} alt="Logo" />
+        </Link>
       </div>
-      <Link to="/app" className="nav-link">
+      <Link to="/App" className="nav-link">
         Home
       </Link>
-      {/* Agrega más enlaces según sea necesario */}
+      <Link to="/about" className="nav-link">
+        About
+      </Link>
+      <div className="searchbar">
+                <form onSubmit={(e) => handleSubmit(e)}>
+                    <input
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Search videogame..."
+                    type="text"
+                    ></input>
+                    <NavLink to={`/results/${name}`}>
+                        <button name="name" type="submit"> Go! </button>
+                    </NavLink>
+                </form>
+        </div>
     </div>
   );
-};
+}
 
 export default Navbar;

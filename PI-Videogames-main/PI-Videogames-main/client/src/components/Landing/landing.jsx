@@ -1,4 +1,3 @@
-// Landing.jsx
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './landing.css';
@@ -8,7 +7,7 @@ const Landing = () => {
 
   const handleIngresar = () => {
     // Redirige a la página principal (App.js)
-    history.push('/app');
+    history.push('/App');
   };
 
   return (
