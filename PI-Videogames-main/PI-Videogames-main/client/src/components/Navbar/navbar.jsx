@@ -1,34 +1,28 @@
-// Navbar.jsx
 import React, { useState } from "react";
-import { Link, NavLink } from 'react-router-dom';
-import './navbar.css';
+import { Link, NavLink } from "react-router-dom";
+import "./Navbar.css"
 
-
-
-
-function Navbar() {
-
-  const [name, setName] = useState("");
+function NavBar() {
+    const [name, setName] = useState("");
 
     function handleSubmit(e) {
         e.preventDefault();
         setName("");
     }
 
-  return (
-    <div className="navbar">
-      <div className="logo-container">
-        <Link to="/">
-          <img src={require('../Assets/fotojoystick.png')} alt="Logo" />
-        </Link>
-      </div>
-      <Link to="/App" className="nav-link">
-        Home
-      </Link>
-      <Link to="/about" className="nav-link">
-        About
-      </Link>
-      <div className="searchbar">
+    return (
+        <div className="navBar">
+            <div className="videogames">
+                <Link to="/">
+                    <h3>Landing!</h3>
+                </Link>
+            </div>
+            <div className="home">
+                <Link to="/home">
+                    <h3>Home</h3>
+                </Link>
+            </div>
+            <div className="searchbar">
                 <form onSubmit={(e) => handleSubmit(e)}>
                     <input
                     value={name}
@@ -40,9 +34,20 @@ function Navbar() {
                         <button name="name" type="submit"> Go! </button>
                     </NavLink>
                 </form>
+            </div>
+            <div className="create">
+                <Link to="/create">
+                <h3>Create</h3>
+                </Link>
+            </div>
+            <div className="about">
+                <Link to="/about">
+                <h3>About</h3>
+                </Link>
+            </div>
         </div>
-    </div>
-  );
+    );
 }
 
-export default Navbar;
+
+export default NavBar;

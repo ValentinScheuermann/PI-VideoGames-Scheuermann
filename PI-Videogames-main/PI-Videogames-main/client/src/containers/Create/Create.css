@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.container{
+    font-size: 20px;
+    color: white;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form{
+    border: 1px solid rgb(53 255 219);
+    border-radius: 20px;
+    height: 500px;
+    width: 650px;
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 5px;
+    margin-bottom: 120px;
+    box-shadow: 2px 2px 40px rgb(19 243 243);
+}
+
+
+.divTitles{
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.label{
+    color: white;
+    width: 145px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background: none;
+    margin: 5px;
+}
+
+.label:hover{
+    cursor: pointer;
+}
+
+.checkboxs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 650px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.gendivs{
+    display: flex;
+    
+}
+
+.perro{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.checks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.checks input:hover {
+    cursor: pointer;
+}
+
+.imagediv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.imagein{
+    color: white;
+    width: 300px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background: none;
+    margin: 5px;
+}
+
