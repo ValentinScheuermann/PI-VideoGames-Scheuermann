@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { getGenres, filterByGenre, orderByCreator, orderAsc, orderDesc, resetAll } from "../../actions/index";
+import { getGenres, filterByGenre, orderByCreator, orderAsc, orderDesc } from "../../actions/index";
 import "./Filter.css";
 
 export function Filter({ paginate }) {
@@ -9,7 +9,7 @@ export function Filter({ paginate }) {
 
   useEffect(() => {
     dispatch(getGenres());
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [dispatch]);
 
   // Filtrado por genre
   const handleFilter = (e) => {
@@ -24,7 +24,11 @@ export function Filter({ paginate }) {
     } else if (e.target.value === "desc_name" || e.target.value === "desc_rating") {
       dispatch(orderDesc(e.target.value));
     } else {
-      dispatch(filterByGenre(e.target.value));
+      // Si seleccionas "All" en el orden, resetea la ordenación y lista filtrada
+      dispatch({
+        type: "ORDER_RESET",
+      });
+      paginate(e, 1);
     }
   };
 
@@ -37,16 +41,6 @@ export function Filter({ paginate }) {
       dispatch(filterByGenre(e.target.value));
       paginate(e, 1);
     }
-  };
-
-  // Resetear todos los filtros
-  const handleReset = () => {
-    dispatch(resetAll());
-    // Restablecer otros valores a "All"
-    document.getElementById("filterGenre").value = "All";
-    document.getElementById("order").value = "All";
-    document.getElementById("filterCreator").value = "All";
-    // Lógica adicional de reinicio si es necesario
   };
 
   return (
@@ -77,9 +71,6 @@ export function Filter({ paginate }) {
           <option key="Api" value="Api">Api videogames</option>
           <option key="Created" value="Created">User videogames</option>
         </select>
-      </div>
-      <div>
-        <button onClick={handleReset}>Reset</button>
       </div>
     </div>
   );

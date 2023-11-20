@@ -3,12 +3,19 @@ const { Videogame, Genre } = require('../db.js');
 
 const router = Router();
 
-//Recibe la data colectada desde el formulario por el body
+// Recibe la data colectada desde el formulario por el body
 // Creo el videojuego en la db
-//POST//http://localhost:3001/videogames/ y por body(json) pasar el arreglo 
-//{//   "name": "caca",//   "description": "Descripción del Videojuego",
-//   "platforms": ["Plataforma(s) del Videojuego"],//   "image": "URL de la Imagen",
-//   "releaseDate": "Fecha de Lanzamiento",//   "rating": 9.0,//   "genres": ["Action, Adventure"]// }
+// POST // http://localhost:3001/videogames/
+// Por body (JSON) pasar el arreglo:
+// {
+//   "name": "caca",
+//   "description": "Descripción del Videojuego",
+//   "platforms": ["Plataforma(s) del Videojuego"],
+//   "image": "URL de la Imagen",
+//   "released": "Fecha de Lanzamiento",
+//   "rating": 9.0,
+//   "genres": ["Action, Adventure"]
+// }
 
 router.post('/', async (req, res) => {
   const { name, description, image, released, rating, platforms, genres } = req.body;
@@ -22,7 +29,7 @@ router.post('/', async (req, res) => {
     gameCreated = await Videogame.create({
       name,
       description,
-      image, 
+      image,
       released,
       rating,
       platforms: platformString,
@@ -37,7 +44,8 @@ router.post('/', async (req, res) => {
       }
     }
 
-    res.send('Videogame created successfully!');
+    // Enviar el objeto del videojuego creado como JSON
+    res.status(201).json(gameCreated);
   } else {
     res.status(400).json({ error: 'Error al crear el videojuego' });
   }

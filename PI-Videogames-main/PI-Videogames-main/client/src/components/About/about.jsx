@@ -12,16 +12,15 @@ function About() {
                 {/* Botones de redes sociales */}
                 <div className="social-buttons">
                     <a href="https://www.instagram.com/valenscheuermann" target="_blank" rel="noopener noreferrer">
-                    <img  src={require('./images/instagram.png')} alt="Instagram" />
-                    
-                    
-                
+                        <img src={require('./images/instagram.png')} alt="Instagram" />
+                    </a>
+
                     <a href="https://wa.me/5492216164153" target="_blank" rel="noopener noreferrer">
-                    <img  src={require('./images/whatsapp.png')} alt="Whatsapp" />
+                        <img src={require('./images/whatsapp.png')} alt="Whatsapp" />
                     </a>
+
                     <a href="https://www.linkedin.com/in/valentin-scheuermann-b85995246" target="_blank" rel="noopener noreferrer">
-                    <img  src={require('./images/linkedin.png')} alt="Linkedin" />
-                    </a>
+                        <img src={require('./images/linkedin.png')} alt="Linkedin" />
                     </a>
                 </div>
             </div>

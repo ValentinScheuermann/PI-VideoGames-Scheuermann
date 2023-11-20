@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 30px;
     color: rgb(255, 255, 255);
     
 }
@@ -45,7 +45,7 @@
       border-radius:20px;
       background:rgba(0, 0, 0, 0.404);
       box-shadow: 2px 2px 40px rgb(19 243 243);
-      
+      margin-bottom: 20px;
   }
   
   .button:hover {

@@ -94,52 +94,42 @@ export const filterByGenre = (genres) => (dispatch, getState) => {
 
 export const orderAsc = (type) => (dispatch, getState) => {
   const filtered = getState().filteredVideogames;
-  let videogamesOrder = []
+  let videogamesOrder = [];
 
-    if (type === "asc_name") {
-      videogamesOrder = filtered.sort((a, b) => {
-        if (a.name > b.name) return 1;
-        if (a.name < b.name) return -1;
-        return 0;
-      });
-    } else if (type === "asc_rating") {
-      videogamesOrder = filtered.sort(
-        (a, b) => a.rating - b.rating
-      );
-    }
-    dispatch({
-      type: "ORDER_ASC_RATING",
-      payload: {
-        videogamesOrder,
-        name: type,
-      },
-    });
-}
+  if (type === "asc_name") {
+    videogamesOrder = [...filtered].sort((a, b) => a.name.localeCompare(b.name));
+  } else if (type === "asc_rating") {
+    videogamesOrder = [...filtered].sort((a, b) => a.rating - b.rating);
+  }
 
+  dispatch({
+    type: "ORDER_ASC_RATING",
+    payload: {
+      videogamesOrder,
+      name: type,
+    },
+  });
+};
 
 export const orderDesc = (type) => (dispatch, getState) => {
   const filtered = getState().filteredVideogames;
-  let videogamesOrder = []
-    
-    if (type === "desc_name") {
-      videogamesOrder = filtered.sort((a, b) => {
-        if (a.name < b.name) return 1;
-        if (a.name > b.name) return -1;
-        return 0;
-      });
-    } else if (type === "desc_rating") {
-      videogamesOrder = filtered.sort(
-        (a, b) => b.rating - a.rating
-      );
-    }
-    dispatch({
-      type: "ORDER_DESC_RATING",
-      payload: {
-        videogamesOrder,
-        name: type,
-      },
-    });
-}
+  let videogamesOrder = [];
+
+  if (type === "desc_name") {
+    videogamesOrder = [...filtered].sort((a, b) => b.name.localeCompare(a.name));
+  } else if (type === "desc_rating") {
+    videogamesOrder = [...filtered].sort((a, b) => b.rating - a.rating);
+  }
+
+  dispatch({
+    type: "ORDER_DESC_RATING",
+    payload: {
+      videogamesOrder,
+      name: type,
+    },
+  });
+};
+
 
 
 export const orderByCreator = (source) => (dispatch, getState) => {

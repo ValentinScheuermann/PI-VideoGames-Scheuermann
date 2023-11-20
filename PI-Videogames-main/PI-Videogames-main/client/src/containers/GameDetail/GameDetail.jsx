@@ -10,20 +10,30 @@ function GameDetail({ id }) {
   const videogame = useSelector((store) => store.searchVideogameById);
 
   useEffect(() => {
+    // Enfocar al inicio de la página cuando se monta el componente
+    window.scrollTo(0, 0);
+
     dispatch(getVideogameById(id));
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [id]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (    
     <div className="full">
+      {/* Botón para volver arriba */}
+      <Link to="/home">
+        <button className="button" type="submit">🡸</button>
+      </Link>
+
       <div className="info">
         <div className="image">
-              {videogame.image === null || !videogame.image ?
-              <NotFound image={"noimage"} />
-              : <img src={videogame.image} alt={videogame.name} /> }
-              <div>
-                <h1>{videogame.name} </h1>
-                <h5>({videogame.released})</h5>
-              </div>
+          {videogame.image === null || !videogame.image ? (
+            <NotFound image={"noimage"} />
+          ) : (
+            <img src={videogame.image} alt={videogame.name} />
+          )}
+          <div>
+            <h1>{videogame.name} </h1>
+            <h5>({videogame.released})</h5>
+          </div>
         </div>
         <div className="details">
           <div className="text">
@@ -32,7 +42,7 @@ function GameDetail({ id }) {
           </div>
           <div className="Genres">
             <div className="genres">
-            It's an {videogame.genres} game ranked at {videogame.rating} points.  
+              It's an {videogame.genres} game ranked at {videogame.rating} points.
             </div>
           </div>
           <div className="Platforms">
@@ -42,8 +52,10 @@ function GameDetail({ id }) {
           </div>
         </div>
       </div>
+
+      {/* Botón para volver abajo */}
       <Link to="/home">
-          <button className="button" type="submit">🡸</button>
+        <button className="button" type="submit">🡸</button>
       </Link>
     </div>    
   );

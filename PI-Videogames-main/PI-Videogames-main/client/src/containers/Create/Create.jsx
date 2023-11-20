@@ -90,7 +90,7 @@ export default function Create() {
     <div className="container">
       <h1>Create your Videogame!</h1>
       <form
-        id="survey-form"
+        id="create-form"
         className="form"
         noValidate
         onSubmit={(e) => handleSubmit(e)}
@@ -99,55 +99,60 @@ export default function Create() {
           <div>
             <div className="divTitles">
               <div>
-                <label>-Name-</label>
+                <label htmlFor="name">-Name-</label>
                 <input
                   className="label"
                   type="text"
                   name="name"
+                  id="name"
                   value={game.name}
                   onChange={(e) => ChangeInput(e)}
-                ></input>
+                />
               </div>
               <div>
-                <label>-Description-</label>
+                <label htmlFor="description">-Description-</label>
                 <input
                   className="label"
                   type="text"
                   name="description"
+                  id="description"
                   value={game.description}
                   onChange={(e) => ChangeInput(e)}
-                ></input>
+                />
               </div>
               <div>
-                <label>-Released-</label>
+                <label htmlFor="released">-Released-</label>
                 <input
                   className="label"
                   type="date"
                   name="released"
+                  id="released"
                   value={game.released}
                   onChange={(e) => ChangeInput(e)}
-                ></input>
+                />
               </div>
               <div>
-                <label>-Rating-</label>
+                <label htmlFor="rating">-Rating-</label>
                 <input
                   className="label"
                   type="number"
                   name="rating"
+                  id="rating"
                   value={game.rating}
                   onChange={(e) => ChangeInput(e)}
-                ></input>
+                />
               </div>
             </div>
             <div className="imagediv">
-              <label>-Image URL-</label>
+              <label htmlFor="image">-Image URL-</label>
               <input
                 className="imagein"
                 type="text"
                 name="image"
+                id="image"
                 value={game.image}
                 onChange={(e) => ChangeInput(e)}
-              ></input>
+              />
             </div>
           </div>
           <div className="checkboxs">
@@ -160,10 +165,11 @@ export default function Create() {
                       <input
                         type="checkbox"
                         name="genres"
+                        id={`genre_${gen.name}`}
                         value={gen.name}
                         onChange={(e) => ChangeInput(e)}
-                      ></input>
-                      <label name={gen}>{gen.name}</label>
+                      />
+                      <label htmlFor={`genre_${gen.name}`}>{gen.name}</label>
                     </div>
                   ))}
                 </div>
@@ -173,10 +179,11 @@ export default function Create() {
                       <input
                         type="checkbox"
                         name="genres"
+                        id={`genre_${gen.name}`}
                         value={gen.name}
                         onChange={(e) => ChangeInput(e)}
-                      ></input>
-                      <label name={gen}>{gen.name}</label>
+                      />
+                      <label htmlFor={`genre_${gen.name}`}>{gen.name}</label>
                     </div>
                   ))}
                 </div>
@@ -190,10 +197,11 @@ export default function Create() {
                     <input
                       type="checkbox"
                       name="platforms"
+                      id={`platform_${P}`}
                       value={P}
                       onChange={(e) => ChangeInput(e)}
-                    ></input>
-                    <label name={P}>{P}</label>
+                    />
+                    <label htmlFor={`platform_${P}`}>{P}</label>
                   </div>
                 ))}
               </div>

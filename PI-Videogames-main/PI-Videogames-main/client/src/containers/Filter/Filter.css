@@ -18,15 +18,15 @@
   
 
 .filter div {
-    width: 160px;
+    width: 220px;
 }
 
 .filter select {
-    width: 145px;
+    width: 190px;
     border: 1px solid black;
     border-radius: 10px;
     margin: 5px;
-    font-size: 20px;
+    font-size: 17px;
     
 }
 

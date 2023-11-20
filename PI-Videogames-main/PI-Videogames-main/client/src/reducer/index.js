@@ -75,6 +75,13 @@ export default function rootReducer(state = initialState, action) {
       filterBy: action.payload.source,
     };
 
+    case "ORDER_RESET":
+      return {
+        ...state,
+        orderBy: "Select",
+        filteredVideogames: [...state.videogames], // Restaura a la lista original
+      };
+
     default:
       return state;
   }
