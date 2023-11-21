@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,500;1,700&display=swap');
 
 .navBar {
+	border: 1px solid rgb(13 244 242);
   width: 80%;
   height: 5vh;
   background: rgba(0, 0, 0, 0.774);
@@ -21,6 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .navBar h3 {
