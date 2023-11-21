@@ -51,5 +51,5 @@
   .button:hover {
       cursor: pointer;
       font-size: 125%;
-      text-shadow: 0 0 5px #fff,
+      text-shadow: 0 0 5px #fff,  
   };

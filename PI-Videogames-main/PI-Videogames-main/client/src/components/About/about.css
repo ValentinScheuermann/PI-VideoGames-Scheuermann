@@ -16,11 +16,14 @@
     font-size: 60px;
     color: white;
     background-color: #0000007a;
+    border-radius: 20%;
 }
 h4 {
     color: white;
     font-size: 20px;
     background-color: #0000007a;
+    border-radius: 20%;
+
 
 }
 
@@ -43,7 +46,21 @@ img {
     width: 90px; /* Ajusta el tamaño según tus preferencias */
     height: auto; /* Mantiene la proporción original de la imagen */
     margin-right: 20px;
+    /* transition: transform 0.1s ease-in-out; */
   }
+
+
+.fotoredes{
+    transition: transform 0.1s ease-in-out;
+}
+.fotoredes:hover{
+    transform: scale(1.1);
+
+}
   .social-buttons {
     flex-wrap: wrap;
+}
+
+.link {
+    color: #2ce6e2;
 }

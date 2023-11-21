@@ -11,6 +11,10 @@
 	margin-bottom: 5px;
 	display: flex;
 	flex-direction: column;
+	transition: transform 0.1s ease-in-out;
+}
+.card:hover{
+	transform: scale(103%);
 }
 
 .gral {

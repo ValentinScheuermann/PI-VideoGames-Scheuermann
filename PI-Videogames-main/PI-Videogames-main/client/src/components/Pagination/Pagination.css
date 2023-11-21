@@ -3,21 +3,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px ;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.108);
     margin-bottom: 20px;
     margin-top: 10px;
-}
-
-.pagination button{
+  }
+  
+  .pagination:hover {
+    cursor: pointer;
+  }
+  
+  .pagination button {
     background: none;
     border: none;
     color: white;
     font-size: 18px;
-}
-
-.item button:hover {
-    cursor: pointer;
-    font-size: 130%;
-    text-shadow: 0 0 5px #fff,
-}
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .pagination button:hover {
+    text-shadow: 0 0 5px #fff;
+    transform: scale(1.3);
+  }
+  

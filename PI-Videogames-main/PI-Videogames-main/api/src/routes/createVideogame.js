@@ -5,14 +5,14 @@ const router = Router();
 
 // Recibe la data colectada desde el formulario por el body
 // Creo el videojuego en la db
-// POST // http://localhost:3001/videogames/
+// POST // http://localhost:3001/videogame
 // Por body (JSON) pasar el arreglo:
 // {
 //   "name": "caca",
 //   "description": "Descripción del Videojuego",
 //   "platforms": ["Plataforma(s) del Videojuego"],
 //   "image": "URL de la Imagen",
-//   "released": "Fecha de Lanzamiento",
+//   "released": "10/12/1994",
 //   "rating": 9.0,
 //   "genres": ["Action, Adventure"]
 // }

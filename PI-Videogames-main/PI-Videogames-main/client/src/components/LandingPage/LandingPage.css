@@ -2,12 +2,11 @@
 
 .background {
     height: 100vh;
-    background: url("./background-transformed.jpeg");
+    background: url("./background.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .title {
@@ -19,20 +18,22 @@
 }
 
 .title h2 {
+  
     font-family: 'Poppins', sans-serif;
     font-size: 350%;
     color: #f9f3f4;
 }
 
+
 .title button {
   font-family: 'Poppins', sans-serif;
     color: white;
     font-size: 250%;
-    border: solid 1px white;
+    border: solid 3px #f7f9f1;
     border-radius:20px;
     background:none;
-    margin-top: 110px;
-    
+    margin-top: 90px;
+
 }
 
 .title button:hover {

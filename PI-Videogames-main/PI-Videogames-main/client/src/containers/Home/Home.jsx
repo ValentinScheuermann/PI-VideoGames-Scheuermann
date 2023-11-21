@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { getVideogames  } from "../../actions/index";
+import { getVideogames } from "../../actions/index";
 import Videogames from "../../components/Videogames/Videogames";
 import { Pagination } from "../../components/Pagination/Pagination";
 import { Filter } from "../Filter/Filter";
@@ -35,6 +35,31 @@ export default function Home() {
   let firstCardPerPage = lastCardPerPage - videogamesPerPage;
   let currentPageGames = allVideogames.slice(firstCardPerPage, lastCardPerPage);
 
+  const [showScrollToTop, setShowScrollToTop] = useState(false);
+
+  const handleScroll = () => {
+    // Mostrar el botón de "Scroll to Top" cuando el usuario ha bajado cierta cantidad
+    setShowScrollToTop(window.scrollY > 300);
+  };
+
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    // Agregar el event listener para el evento scroll
+    window.addEventListener("scroll", handleScroll);
+
+    // Limpiar el event listener al desmontar el componente
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
   return (
     <div className="home">
       <Filter paginate={paginate} />
@@ -49,6 +74,11 @@ export default function Home() {
         totalVideogames={allVideogames.length}
         paginate={paginate}
       />
+      {showScrollToTop && (
+        <button className="scrollToTopButton" onClick={handleScrollToTop}>
+          Scroll to Top
+        </button>
+      )}
     </div>
   );
 }
