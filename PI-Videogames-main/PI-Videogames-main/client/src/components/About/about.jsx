@@ -6,7 +6,8 @@ function About() {
         <div className="about">
             <h1>Videogames - Individual Project by VS!</h1>
             <div>
-                <h4>The content of this project was built using: <a href="https://rawg.io/apidocs" className="link" target="_blank" rel="noopener noreferrer" >RAWG</a> API.</h4>
+                <h4>The content of this project was built using: <a href="https://rawg.io/apidocs" className="link" target="_blank" rel="noopener noreferrer" >RAWG</a> API.
+                And this website is created using CRA - Create React App-</h4>
                 <h4>My name is Valentin Scheuermann, Henry Student, and this project was developed for the individual project.</h4>
 
                 {/* Botones de redes sociales */}

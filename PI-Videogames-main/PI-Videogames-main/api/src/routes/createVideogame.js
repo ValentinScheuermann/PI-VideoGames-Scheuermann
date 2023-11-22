@@ -8,7 +8,7 @@ const router = Router();
 // POST // http://localhost:3001/videogame
 // Por body (JSON) pasar el arreglo:
 // {
-//   "name": "caca",
+//   "name": "Holis",
 //   "description": "Descripción del Videojuego",
 //   "platforms": ["Plataforma(s) del Videojuego"],
 //   "image": "URL de la Imagen",
