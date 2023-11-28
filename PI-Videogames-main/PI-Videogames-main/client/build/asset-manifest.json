@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/PI-VideoGames-Scheuermann/static/css/main.d1f51dbd.css",
-    "main.js": "/PI-VideoGames-Scheuermann/static/js/main.0f13ff6f.js",
-    "static/media/background-transformed.jpeg": "/PI-VideoGames-Scheuermann/static/media/background-transformed.fa4084b097f8ef204cd9.jpeg",
-    "static/media/instagram.png": "/PI-VideoGames-Scheuermann/static/media/instagram.0963b7a591227164566c.png",
-    "static/media/whatsapp.png": "/PI-VideoGames-Scheuermann/static/media/whatsapp.0f74af526ffeb126190c.png",
-    "static/media/background.jpg": "/PI-VideoGames-Scheuermann/static/media/background.a3b89ce5e4e753be68b7.jpg",
-    "index.html": "/PI-VideoGames-Scheuermann/index.html",
-    "main.d1f51dbd.css.map": "/PI-VideoGames-Scheuermann/static/css/main.d1f51dbd.css.map",
-    "main.0f13ff6f.js.map": "/PI-VideoGames-Scheuermann/static/js/main.0f13ff6f.js.map"
+    "main.css": "/client/static/css/main.7839c332.css",
+    "main.js": "/client/static/js/main.e14d78a3.js",
+    "static/media/background-transformed.jpeg": "/client/static/media/background-transformed.fa4084b097f8ef204cd9.jpeg",
+    "static/media/instagram.png": "/client/static/media/instagram.0963b7a591227164566c.png",
+    "static/media/whatsapp.png": "/client/static/media/whatsapp.0f74af526ffeb126190c.png",
+    "static/media/background.jpg": "/client/static/media/background.a3b89ce5e4e753be68b7.jpg",
+    "index.html": "/client/index.html",
+    "main.7839c332.css.map": "/client/static/css/main.7839c332.css.map",
+    "main.e14d78a3.js.map": "/client/static/js/main.e14d78a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1f51dbd.css",
-    "static/js/main.0f13ff6f.js"
+    "static/css/main.7839c332.css",
+    "static/js/main.e14d78a3.js"
   ]
 }
