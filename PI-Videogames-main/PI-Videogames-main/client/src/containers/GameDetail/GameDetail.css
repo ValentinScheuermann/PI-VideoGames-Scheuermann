@@ -16,13 +16,15 @@
     flex-direction: row;
     background-color: #00000093;
     margin-bottom: 50px;
-    
+    border-radius: 97px;
+    border: 1px solid rgb(13 244 242)
 }
 
 .image {
     width: 50%;
     height: 90%;
     margin-left: 150px;
+    margin-top: 40px;
 }
 
 .image img {
@@ -53,3 +55,4 @@
       font-size: 125%;
       text-shadow: 0 0 5px #fff,  
   };
+

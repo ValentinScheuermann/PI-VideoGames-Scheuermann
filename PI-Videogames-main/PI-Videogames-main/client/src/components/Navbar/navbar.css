@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  border: none;
 }
 
 .navBar h3 {
