@@ -1,0 +1,28 @@
+.pagination {
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.108);
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+  
+  .pagination:hover {
+    cursor: pointer;
+  }
+  
+  .pagination button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .pagination button:hover {
+    text-shadow: 0 0 5px #fff;
+    transform: scale(1.3);
+  }
+  

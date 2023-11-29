@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/videogames/static/css/main.a6d85762.css",
+    "main.js": "/videogames/static/js/main.70f930dc.js",
+    "static/media/background-transformed.jpeg": "/videogames/static/media/background-transformed.fa4084b097f8ef204cd9.jpeg",
+    "static/media/instagram.png": "/videogames/static/media/instagram.0963b7a591227164566c.png",
+    "static/media/whatsapp.png": "/videogames/static/media/whatsapp.0f74af526ffeb126190c.png",
+    "static/media/background.jpg": "/videogames/static/media/background.a3b89ce5e4e753be68b7.jpg",
+    "index.html": "/videogames/index.html",
+    "main.a6d85762.css.map": "/videogames/static/css/main.a6d85762.css.map",
+    "main.70f930dc.js.map": "/videogames/static/js/main.70f930dc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6d85762.css",
+    "static/js/main.70f930dc.js"
+  ]
+}

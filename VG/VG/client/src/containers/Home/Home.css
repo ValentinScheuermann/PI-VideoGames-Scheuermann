@@ -1,0 +1,21 @@
+.home{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    align-content: center;
+    /* height: 200vh; */
+}
+.scrollToTopButton {
+    border: 1px solid rgb(13 244 242);
+    border-radius: 50px;
+    background-color: #071425;
+    color: white;
+    margin-bottom: 10px;
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .scrollToTopButton:hover {
+    transform: scale(1.1);
+  }
+  

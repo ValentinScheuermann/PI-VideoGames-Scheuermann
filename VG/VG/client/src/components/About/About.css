@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.about{
+    font-family: 'Roboto', sans-serif;
+    width: 99%;
+    height: 94vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.521);
+    border-radius: 97px;
+    border: 1px solid rgb(13 244 242);
+    justify-content: center;
+}
+
+.about h1{
+    font-size: 60px;
+    color: white;
+    /* background-color: #0000007a; */
+    border-radius: 20%;
+    justify-content: flex-start;
+}
+h4 {
+    color: white;
+    font-size: 20px;
+    /* background-color: #0000007a; */
+    border-radius: 20%;
+
+
+}
+
+
+.logos{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.img{
+    height: 20vh;
+}
+.img1{
+    height: 8vh;
+}
+
+img {
+    justify-content: center;
+    width: 90px; /* Ajusta el tamaño según tus preferencias */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin-right: 20px;
+    /* transition: transform 0.1s ease-in-out; */
+  }
+
+
+.fotoredes{
+    transition: transform 0.1s ease-in-out;
+}
+.fotoredes:hover{
+    transform: scale(1.1);
+
+}
+  .social-buttons {
+    flex-wrap: wrap;
+}
+
+.link {
+    color: #2ce6e2;
+}

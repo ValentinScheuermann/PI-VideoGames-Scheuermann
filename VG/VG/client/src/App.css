@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+  background-image: url(./background-transformed.jpeg);
+  background-size: cover;
+  min-height: 100vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
